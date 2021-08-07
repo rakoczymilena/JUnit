@@ -9,6 +9,7 @@ public class MyMath {
 	public static int subtract(int a, int b) {
 		// TODO Auto-generated method stub
 		return a-b;
+
 	}
 
 	public static int multiply(int a, int b) {
@@ -21,3 +22,9 @@ public class MyMath {
 		return a/b;
 	}
 }
+
+
+
+
+
+
