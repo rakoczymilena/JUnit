@@ -3,20 +3,29 @@ package io.firstproject;
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class MyMathTest {
+	
+	@Before
+	public void before() {
+		System.out.println("before");
+	}
 
 	@Test
 	public void testAddPass() {
+		System.out.println("testAdd");
 		int expected = 2;
 		int actual = MyMath.MyAdd(1,1);
 		assertEquals(expected, actual);
+		
 	}
 
 	@Test
 	public void testSubtractPass() {
+		System.out.println("testSubtract");
 	int a = 10; int b = 5; 
 	int expectedResult = 5; 
 	int result = MyMath.subtract(a, b);
@@ -138,7 +147,7 @@ class MyMathTest {
 	@Test 
 	public void testDivideErrorFail() {
 	assertEquals(3, MyMath.divide(2,2),
-	"Error in subtract");
+	"Error in divide");
 	}
 	
 	//14
@@ -181,7 +190,7 @@ class MyMathTest {
 	//19 subtract
 	@Test 
 	void testSubtractTwoNegativesFail() {
-		assertEquals(2, MyMath.subtract(-1, -1), 
+		assertEquals(0, MyMath.subtract(-1, -1), 
 				"Subtract method should return the subtract of two negative numbers");
 	}
 	
@@ -199,7 +208,8 @@ class MyMathTest {
 		assertEquals(2, MyMath.subtract(2, 0), 
 				"Add method should return the sum of two numbers");
 }
-}	
+}
+	
 
 
 
