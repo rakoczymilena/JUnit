@@ -19,7 +19,6 @@ public class MyMath {
 	}
 
 	public static int divide(int a, int b) {
-		// TODO Auto-generated method stub
 		return a/b;
 	}
 
@@ -30,11 +29,7 @@ public class MyMath {
 			      }
 			      	return a /  b;
 			      	}
-	
-	
-	
-	
-	
+
 	
 }
 	

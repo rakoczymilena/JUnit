@@ -128,29 +128,20 @@ class MyMathTest {
 				"Multiply method should return the multiplication of two numbers");
 	}
 
-	//11.  multiply
-   static void InvalidOperationMultyply(String[] args) throws Exception
-    {
-        int result = MyMath.multiply(6, 6);
-
-        if (result != 31)
-            throw new Exception();
-    }
-	
-	//12 divide
+	//11 divide
 	@Test 
 	public void testDivideTwoPossitiveIntErrorFail() {
 	assertEquals(6, MyMath.divide(6,2),
 	"Error in divide");
 		}
-	//13 divide
+	//12 divide
 	@Test 
 	public void testDivideErrorFail() {
 	assertEquals(3, MyMath.divide(2,2),
 	"Error in divide");
 	}
 	
-	//14
+	//13
 	@Test
 	   public void testDivideIntPass() {
 	      assertEquals("error in divInt()", 3, MyMath.divInt(9, 3));
@@ -158,21 +149,21 @@ class MyMathTest {
 	   }
 
 
-	//15 divide
+	//14 divide
 	@Test 
 	void testDivideTwoPositivesPass() {
 		assertEquals(2, MyMath.divide(10, 5), 
 				"Subtract method should return possitive number");
 	}
 	
-	//16 divide
+	//15 divide
 	@Test 
 	void testDivideTwoNegativesPass() {
 		assertEquals(2, MyMath.divide(-10, -5), 
 				"Subtract method should return possitive number");
 	}
 	
-	//17 subtract
+	//16 subtract
 	
 	@Test 
 	public void testSubtractTwoPossitiveIntErrorFail() {
@@ -180,34 +171,34 @@ class MyMathTest {
 	"Error in subtract");
 	}
 	
-	//18 subtract
+	//17 subtract
 	@Test 
 	void testSubtractTwoPositivesPass() {
 		assertEquals(2, MyMath.subtract(3, 1), 
 				"Subtract method should return 2");
 	}
 	
-	//19 subtract
+	//18 subtract
 	@Test 
-	void testSubtractTwoNegativesFail() {
+	void testSubtractTwoNegativesPass() {
 		assertEquals(0, MyMath.subtract(-1, -1), 
 				"Subtract method should return the subtract of two negative numbers");
 	}
 	
-	//20 subtract
+	//19 subtract
 	@Test
 	void testSubtractAPositiveAndANegativePass() {
 		assertEquals(2, MyMath.subtract(1, -1), 
 				"Subtract method should return the subtract of two numbers");
 		
 	}
-	//21 subtract
+	//20 subtract
 	
 	@Test
 	void testSubtractAPositiveAndAZeroPass() {
 		assertEquals(2, MyMath.subtract(2, 0), 
 				"Add method should return the sum of two numbers");
-}
+	}
 }
 	
 
