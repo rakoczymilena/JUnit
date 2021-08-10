@@ -133,6 +133,7 @@ class MyMathTest {
 	public void testDivideTwoPossitiveIntErrorFail() {
 	assertEquals(6, MyMath.divide(6,2),
 	"Error in divide");
+	
 		}
 	//12 divide
 	@Test 
